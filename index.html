@@ -6,8 +6,12 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- own carousel css -->
+  <link rel="stylesheet" href="./CSS/owl.carousel.min.css">
+  <link rel="stylesheet" href="./CSS/owl.theme.default.min.css">
   <!-- font -->
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -71,15 +75,16 @@
       </div>
       <div class="plan__content mt-5">
         <div class="row">
-          <div class="col-4">
-            <div class="card plan__item-1">
-              <div class="card-body">
+          <div class="col-4 plan__item-1">
+            <div class="card">
+              <div class="card-header">
                 <h5 class="card-title">Free Package</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  <span>$</span>
-                  <span>0</span>
-                  /month
+                <h6 class="card-subtitle mb-2">
+                  <label>$</label>0
+                  <span class="card-month">/month</span>
                 </h6>
+              </div>
+              <div class="card-body pt-0">
                 <p class="card-text">
                   <ul>
                     <li>5 Dog Walk</li>
@@ -89,22 +94,21 @@
                     <li>Customer Support</li>
                   </ul>
                 </p>
-                <button class="btn btn-success">Buy Now</button>
+                <button class="btn-plan">Buy Now</button>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card plan__item-2">
-              <div class="card-header bg-success text-white text-center p-4 h-120">
-                <button class="btn btn-light text-success">SAVE 10%</button>
-                <h5 class="card-title">Free Package</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  <span>$</span>
-                  <span>39</span>
-                  /month
+          <div class="col-4 plan__item-2">
+            <div class="card">
+              <div class="card-header text-center">
+                <h4>SAVE 10%</h4>
+                <h5 class="card-title">Standard Package</h5>
+                <h6 class="card-subtitle mb-2">
+                  <label>$</label><span>39</span>
+                  <span class="card-month">/month</span>
                 </h6>
               </div>
-              <div class="card-body">
+              <div class="card-body pt-0">
                 <p class="card-text">
                   <ul>
                     <li>5 Dog Walk</li>
@@ -114,19 +118,20 @@
                     <li>Customer Support</li>
                   </ul>
                 </p>
-                <button class="btn btn-success">Buy Now</button>
+                <button class="btn-plan">Get Started</button>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card plan__item-3">
-              <div class="card-body">
-                <h5 class="card-title">Free Package</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  <span>$</span>
-                  <span>89</span>
-                  /month
+          <div class="col-4 plan__item-3">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Pro Package</h5>
+                <h6 class="card-subtitle mb-2">
+                  <label>$</label><span>89</span>
+                  <span class="card-month">/month</span>
                 </h6>
+              </div>
+              <div class="card-body pt-0">
                 <p class="card-text">
                   <ul>
                     <li>5 Dog Walk</li>
@@ -136,7 +141,7 @@
                     <li>Customer Support</li>
                   </ul>
                 </p>
-                <button class="btn btn-success">Buy Now</button>
+                <button class="btn-plan">Buy Now</button>
               </div>
             </div>
           </div>
@@ -146,9 +151,179 @@
     </div>
   </section>
   <!-- =====NUTRITION===== -->
-  <section class="nutrition"></section>
+  <section class="nutrition py-5 m-5 text-center">
+    <div class="container">
+      <div class="title title--red">
+        <p>BETTER PET NUTRITION.</p>
+        <h2>The Finest Fresh Food And All Your Pet Needs.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec tetur adipisi
+          elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo officia.</p>
+      </div>
+      <div class="nutrition__content mt-5">
+        <div class="nutrition__img">
+          <img src="./img/banner2.jpg" alt="banner2" class="img-fluid">
+          <a id="test-popup" class="nutrition__icon open-popup-link" href=""><i class="fa fa-play"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- =====TESTIMONIALS===== -->
-  <section class="testimonial"></section>
+  <section class="testimonial py-5">
+    <div class="container">
+      <div class="title title--red">
+        <p>TESTIMONIALS</p>
+        <h2>Happy Clients & Feedbacks
+        </h2>
+      </div>
+      <div class="testimonial__feedback mt-5">
+        <div class="owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item bg-white">
+                <div class="testimonial__content">
+                  <div class="testimonial__caption mb-4">
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae dolores voluptate
+                        tenetur reiciendis vitae asperiores nihil, earum natus sint odit exercitationem, culpa aperiam
+                        neque
+                        illo nisi!.
+                      </q>
+                    </blockquote>
+                  </div>
+                  <div class="testimoial__info d-flex align-items-center">
+                    <div class="test__img w-25">
+                      <img src="./img/f1.jpg" alt="f1" class="img-fluid w-75">
+                    </div>
+                    <div class="test__info mr-auto">
+                      <h4>John wilson</h4>
+                      <p>Exemple City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item bg-white">
+                <div class="testimonial__content">
+                  <div class="testimonial__caption mb-4">
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae dolores voluptate
+                        tenetur reiciendis vitae asperiores nihil, earum natus sint odit exercitationem, culpa aperiam
+                        neque
+                        illo nisi!.
+                      </q>
+                    </blockquote>
+                  </div>
+                  <div class="testimoial__info d-flex align-items-center">
+                    <div class="test__img w-25">
+                      <img src="./img/f2.jpg" alt="f2" class="img-fluid w-75">
+                    </div>
+                    <div class="test__info mr-auto">
+                      <h4>John wilson</h4>
+                      <p>Exemple City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item bg-white">
+                <div class="testimonial__content">
+                  <div class="testimonial__caption mb-4">
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae dolores voluptate
+                        tenetur reiciendis vitae asperiores nihil, earum natus sint odit exercitationem, culpa aperiam
+                        neque
+                        illo nisi!.
+                      </q>
+                    </blockquote>
+                  </div>
+                  <div class="testimoial__info d-flex align-items-center">
+                    <div class="test__img w-25">
+                      <img src="./img/f3.jpg" alt="f3" class="img-fluid w-75">
+                    </div>
+                    <div class="test__info mr-auto">
+                      <h4>John wilson</h4>
+                      <p>Exemple City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item bg-white">
+                <div class="testimonial__content">
+                  <div class="testimonial__caption mb-4">
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae dolores voluptate
+                        tenetur reiciendis vitae asperiores nihil, earum natus sint odit exercitationem, culpa aperiam
+                        neque
+                        illo nisi!.
+                      </q>
+                    </blockquote>
+                  </div>
+                  <div class="testimoial__info d-flex align-items-center">
+                    <div class="test__img w-25">
+                      <img src="./img/f4.jpg" alt="f4" class="img-fluid w-75">
+                    </div>
+                    <div class="test__info mr-auto">
+                      <h4>John wilson</h4>
+                      <p>Exemple City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item bg-white">
+                <div class="testimonial__content">
+                  <div class="testimonial__caption mb-4">
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae dolores voluptate
+                        tenetur reiciendis vitae asperiores nihil, earum natus sint odit exercitationem, culpa aperiam
+                        neque
+                        illo nisi!.
+                      </q>
+                    </blockquote>
+                  </div>
+                  <div class="testimoial__info d-flex align-items-center">
+                    <div class="test__img w-25">
+                      <img src="./img/f1.jpg" alt="f1" class="img-fluid w-75">
+                    </div>
+                    <div class="test__info mr-auto">
+                      <h4>John wilson</h4>
+                      <p>Exemple City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item bg-white">
+                <div class="testimonial__content">
+                  <div class="testimonial__caption mb-4">
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae dolores voluptate
+                        tenetur reiciendis vitae asperiores nihil, earum natus sint odit exercitationem, culpa aperiam
+                        neque
+                        illo nisi!.
+                      </q>
+                    </blockquote>
+                  </div>
+                  <div class="testimoial__info d-flex align-items-center">
+                    <div class="test__img w-25">
+                      <img src="./img/f1.jpg" alt="f1" class="img-fluid w-75">
+                    </div>
+                    <div class="test__info mr-auto">
+                      <h4>John wilson</h4>
+                      <p>Exemple City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!-- =====CONTACT===== -->
   <section class="contact"></section>
   <!-- FOOTER -->
@@ -177,6 +352,35 @@
       'time': 2000,
       'delay': 10
     });
+  </script>
+  <!-- magnific Popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $('.open-popup-link').magnificPopup({
+      type: 'inline',
+      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+  </script>
+  <!-- OWN CAROUSEL JS -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
+      }
+    })
   </script>
 </body>
 
