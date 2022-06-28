@@ -242,7 +242,6 @@ li{
   .test__info p{
     color: #777777;
     font-size: 17px;
-    text-align: left;
     opacity: 0.8;
   }
 
@@ -257,6 +256,111 @@ li{
   }
   .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 30px;
+  }
+
+  .test__img{
+    width: 90px;
+    margin-right: 20px;
+  }
+
+  /* CONTACT */
+  .contact .title p{
+    font-size: 1.2em;
+    line-height: 28px;
+    color: var(--font-color);
+    font-weight: 400;
+    margin: 20px 0;
+  }
+  .contact__content{
+    max-width: 650px;
+  }
+  .contact__sub{
+    justify-content: space-between;
+  }
+  .contact__form .contact__sub input{
+    font-size: 16px;
+    color: var(--title-h2-color);
+    border-radius: 10px;
+    padding: 0 20px;
+    height: 60px;
+    background: #ffffff;
+    padding: 0 20px;
+    flex-basis: 70%;
+  }
+  .contact__form .contact__sub button{
+    flex-basis: 27%;
+  }
+  .contact__form .contact__sub button:hover{
+    color: #ffffff;
+  }
+  .contact__form .contact__sub input:focus{
+    outline: none;
+    border: 1px solid #189A46;
+    box-shadow: none;
+  }
+  .contact__form .contact__sub input:focus::placeholder{
+    opacity: 0;
+  }
+  /* FOOTER */
+  footer{
+    background-color: #111111;
+    color: #ffffff;
+  }
+  .footer__content h3{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .footer-contact span{
+    color: #696969;
+    font-weight: 700;
+  }
+  .footer__content a,
+  .footer__content li{
+    color: #777777;
+    margin-bottom: 10px;
+  }
+  .footer__content a:hover{
+    color: #ffffff;
+  }
+  .footer-social span{
+    margin-right: 20px;
+    transition: all 0.5s;
+    margin-top: 10px;
+}
+.footer__bottom{
+    padding: 20px 0;
+    border-top: 1px solid rgba(105, 105, 105, 0.1);
+}
+.footer__bottom span{
+    color: var(--title-p-color);
+}
+
+
+
+.backToTop{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+    background-color: #189A46;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  a:hover{
+    color: #696969;
   }
 
   @keyframes ripple{
