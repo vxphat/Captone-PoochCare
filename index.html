@@ -257,10 +257,10 @@
       <div class="nutrition__content mt-5">
         <div class="nutrition__img">
           <img src="./img/banner2.jpg" alt="banner2" class="img-fluid">
-          <a class="nutrition__icon open-popup-link" href="#popup-video"><i class="fa fa-play"></i></a>
+          <a class="nutrition__icon popup-with-zoom-anim play-view" href="#popup-video"><i class="fa fa-play"></i></a>
         </div>
       </div>
-      <div id="popup-video" class="white-popup mfp-hide mfp-content">
+      <div id="popup-video" class="zoom-anim-dialog mfp-hide mfp-content" wfd-invisible="true">
         <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
     </div>
@@ -541,10 +541,41 @@
   <!-- magnific Popup -->
  <script src="./js/jquery.magnific-popup.min.js"></script>
   <script>
-    $('.open-popup-link').magnificPopup({
+   
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
       type: 'inline',
-      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
     });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+
   </script>
   <!-- OUW CAROUSEL  -->
   <script src="./js/owl.carousel.min.js"></script>

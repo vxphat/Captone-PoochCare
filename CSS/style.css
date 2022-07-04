@@ -473,45 +473,29 @@ header .navbar-nav li:hover::after {
   color: #189A46;
   transform: scale(1.1);
 }
-<<<<<<< HEAD
 
 /* .white-popup {
     position: absolute;
     background: #FFF;
     padding: 20px;
     width: auto;
-    max-width: 500px;
+    max-width: 1000px;
     margin: 20px auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
   } */
-=======
-.white-popup {
-  position: relative;
-  background: #FFF;
-  padding: 20px;
-  width: auto;
-  max-width: 500px;
-  margin: 20px auto;
-}
-.mfp-hide {
-  display: none !important;
-}
-.mfp-content iframe {
-  width: 100%;
-  min-height: 370px;
-  border: none;
-}
-.mfp-content {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 auto;
-  text-align: left;
-  z-index: 1045;
-}
->>>>>>> 4baf8d4bcfb33153c02d2bc460c56ab9df69d1c9
+  #popup-video{
+    margin: 40px auto;
+    position: relative;
+  }
+  #popup-video iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 750px;
+  }
 
 /* testimonial */
 .testimonial {
