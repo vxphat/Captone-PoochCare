@@ -19,14 +19,107 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
   <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
-<body>
+<body id="myBody">
   <!-- =====HEADER===== -->
-  <header></header>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg  navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand Logo" href="#">Pooch Care</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="light-dark">
+          <button class="btn" id="switchButton">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
   <!-- =====CAROUSEL===== -->
-  <section class="carousel"></section>
+  <section class="carousel">
+    <div class="carousel__conten owl-carousel owl-theme">
+      <div class="carousel__item1 carousel__item">
+        <div class="container">
+          <div class="text">
+            <h1>Quality Thing For Loving Pets</h1>
+            <p>Keeps Your Pets Smiling</p>
+            <a href="#" class="active btn">Read More</a>
+            <a href="#" class="btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__item2 carousel__item">
+        <div class="container">
+          <div class="text">
+            <h1>Delivering Happiness For Pets</h1>
+            <p>For The Love Of Pets</p>
+            <a href="#" class="active btn">Read More</a>
+            <a href="#" class="btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__item3 carousel__item">
+        <div class="container">
+          <div class="text">
+            <h1>Quality Thing For Loving Pets</h1>
+            <p>Keeps Your Pets Smiling</p>
+            <a href="#" class="active btn">Read More</a>
+            <a href="#" class="btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__item4 carousel__item">
+        <div class="container">
+          <div class="text">
+            <h1>Delivering Happiness For Pets</h1>
+            <p>We Helps Your Projects</p>
+            <a href="#" class="active btn">Read More</a>
+            <a href="#" class="btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <!-- =====ABOUT US===== -->
   <section class="aboutus"></section>
   <!-- =====SERVICES===== -->
@@ -86,13 +179,13 @@
               </div>
               <div class="card-body pt-0">
                 <p class="card-text">
-                  <ul>
-                    <li>5 Dog Walk</li>
-                    <li>3 Vet Visit</li>
-                    <li>3 Pet Spa</li>
-                    <li>Free Supports</li>
-                    <li>Customer Support</li>
-                  </ul>
+                <ul>
+                  <li>5 Dog Walk</li>
+                  <li>3 Vet Visit</li>
+                  <li>3 Pet Spa</li>
+                  <li>Free Supports</li>
+                  <li>Customer Support</li>
+                </ul>
                 </p>
                 <button class="btn-plan">Buy Now</button>
               </div>
@@ -110,13 +203,13 @@
               </div>
               <div class="card-body pt-0">
                 <p class="card-text">
-                  <ul>
-                    <li>5 Dog Walk</li>
-                    <li>3 Vet Visit</li>
-                    <li>3 Pet Spa</li>
-                    <li>Free Supports</li>
-                    <li>Customer Support</li>
-                  </ul>
+                <ul>
+                  <li>5 Dog Walk</li>
+                  <li>3 Vet Visit</li>
+                  <li>3 Pet Spa</li>
+                  <li>Free Supports</li>
+                  <li>Customer Support</li>
+                </ul>
                 </p>
                 <button class="btn-plan">Get Started</button>
               </div>
@@ -133,13 +226,13 @@
               </div>
               <div class="card-body pt-0">
                 <p class="card-text">
-                  <ul>
-                    <li>5 Dog Walk</li>
-                    <li>3 Vet Visit</li>
-                    <li>3 Pet Spa</li>
-                    <li>Free Supports</li>
-                    <li>Customer Support</li>
-                  </ul>
+                <ul>
+                  <li>5 Dog Walk</li>
+                  <li>3 Vet Visit</li>
+                  <li>3 Pet Spa</li>
+                  <li>Free Supports</li>
+                  <li>Customer Support</li>
+                </ul>
                 </p>
                 <button class="btn-plan">Buy Now</button>
               </div>
@@ -413,6 +506,8 @@
   </footer>
 
 
+
+
   <!-- BACK TO TOP -->
   <a href="" title="Go to top" class="backToTop cd-top text-replace js-cd-top"><i class="fa fa-arrow-up"></i></a>
 
@@ -420,13 +515,13 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
   <!-- COUTING UP NUMBER -->
   <script src="./js/jquery.countup.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
@@ -444,6 +539,17 @@
     $('.open-popup-link').magnificPopup({
       type: 'inline',
       midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+  </script>
+  <!-- OUW CAROUSEL  -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      items: 1,
+      lazyLoad: true,
+      loop: true,
+      margin: 10,
+      // autoplay: true,
     });
   </script>
   <!-- OWN CAROUSEL JS -->
@@ -471,6 +577,18 @@
   <!-- BACKTOTOP JS -->
   <script src="./js/main-backtotop.js"></script>
   <script src="./js/util.js"></script>
+  <!-- light-dark -->
+  <script>
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
+  </script>
+  <script>
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
+
+  </script>
 </body>
 
 </html>
