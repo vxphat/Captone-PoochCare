@@ -123,9 +123,95 @@
 
   </section>
   <!-- =====ABOUT US===== -->
-  <section class="aboutus"></section>
+  <section class="aboutus">
+    <div class="container">
+      <div class="text">
+        <h5>ABOUT US</h5>
+        <h1>We Love Your Pets Like They Are Our Own</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur
+          consequatur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla
+          mollis dapibus nunc, ut rhoncus turpis sodales quis.</p>
+        <div class="click">
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- =====SERVICES===== -->
-  <section class="services"></section>
+  <section class="services">
+    <div class="container">
+      <div class="row service__content">
+        <div class="col-sm-6 col-lg-4 text mb-4 mr-4">
+          <i class="fa-solid fa-snowflake"></i>
+          <div class="title">
+            <a>Dog Walking</a>
+          </div>
+          <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+            blandit eu leo.</p>
+          <div class="click">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 text mb-4 mr-4">
+          <span class="fa fa-cutlery"></span>
+          <div class="title">
+            <a>Healthy Meals</a>
+          </div>
+          <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+            blandit eu leo.</p>
+          <div class="click">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 text mb-4 mr-4">
+          <span class="fa fa-sign-language"></span>
+          <div class="title">
+            <a>Pet Sitting</a>
+          </div>
+          <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+            blandit eu leo.</p>
+          <div class="click">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 col-lg-4 text mb-4 mr-4">
+          <span class="fa fa-sitemap"></span>
+          <div class="title">
+            <a>Dog Activities</a>
+          </div>
+          <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+            blandit eu leo.</p>
+          <div class="click">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 text mb-4 mr-4">
+          <span class="fa fa-shower"></span>
+          <div class="title">
+            <a>Pet Daycare</a>
+          </div>
+          <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+            blandit eu leo.</p>
+          <div class="click">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 text mb-4 mr-4">
+          <span class="fa fa-user-md"></span>
+          <div class="title">
+            <a>Pet Grooming</a>
+          </div>
+          <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+            blandit eu leo.</p>
+          <div class="click">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- =====CHOOSE US===== -->
   <section class="chooseus"></section>
   <!-- =====NUMBER===== -->
@@ -261,7 +347,8 @@
         </div>
       </div>
       <div id="popup-video" class="zoom-anim-dialog mfp-hide mfp-content" wfd-invisible="true">
-        <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allow="autoplay; fullscreen"
+          allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -539,42 +626,42 @@
     });
   </script>
   <!-- magnific Popup -->
- <script src="./js/jquery.magnific-popup.min.js"></script>
+  <script src="./js/jquery.magnific-popup.min.js"></script>
   <script>
-   
-  $(document).ready(function () {
-    $('.popup-with-zoom-anim').magnificPopup({
-      type: 'inline',
 
-      fixedContentPos: false,
-      fixedBgPos: true,
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
 
-      overflowY: 'auto',
+        fixedContentPos: false,
+        fixedBgPos: true,
 
-      closeBtnInside: true,
-      preloader: false,
+        overflowY: 'auto',
 
-      midClick: true,
-      removalDelay: 300,
-      mainClass: 'my-mfp-zoom-in'
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
     });
-
-    $('.popup-with-move-anim').magnificPopup({
-      type: 'inline',
-
-      fixedContentPos: false,
-      fixedBgPos: true,
-
-      overflowY: 'auto',
-
-      closeBtnInside: true,
-      preloader: false,
-
-      midClick: true,
-      removalDelay: 300,
-      mainClass: 'my-mfp-slide-bottom'
-    });
-  });
 
   </script>
   <!-- OUW CAROUSEL  -->
@@ -585,7 +672,8 @@
       lazyLoad: true,
       loop: true,
       margin: 10,
-      // autoplay: true,
+      autoplay: true,
+      smartSpeed: 1000,
     });
   </script>
   <!-- OWN CAROUSEL JS -->
