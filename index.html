@@ -33,7 +33,7 @@
 
 <body id="myBody">
   <!-- =====HEADER===== -->
-  <header>
+  <header class="fixed-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg  navbar-dark">
         <!-- Brand -->
@@ -717,7 +717,6 @@
       items: 1,
       lazyLoad: true,
       loop: true,
-      margin: 10,
       autoplay: true,
       smartSpeed: 1000,
     });
@@ -753,12 +752,7 @@
       document.getElementById("myBody").classList.toggle("dark");
     };
   </script>
-  <script>
-    document.getElementById("switchButton").onclick = function () {
-      document.getElementById("myBody").classList.toggle("dark");
-    };
 
-  </script>
 </body>
 
 </html>

@@ -42,13 +42,16 @@ li {
 
 /* HEADER */
 header {
-  margin-top: 2.5rem;
   background-color: var(--bg-color);
   transition: all 0.5s;
-  position: fixed;
+  /*   
   z-index: 1000;
-  width: 100%;
+  width: 100%; */
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+
+.fixed-top {
+  top: 40px;
 }
 
 .dark header {
@@ -130,6 +133,12 @@ header .navbar-nav li:hover::after {
     position: absolute;
     right: 50px;
     top: 23px;
+  }
+
+  .carousel .container .text h1 {
+    font-size: 50px;
+    line-height: 55px;
+
   }
 }
 
@@ -279,6 +288,13 @@ header .navbar-nav li:hover::after {
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot span:hover {
+  width: 30px;
+  height: 10px;
+  background: var(--background-color);
 }
 
 .carousel .carousel__item::before {
