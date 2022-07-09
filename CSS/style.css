@@ -274,7 +274,7 @@ header .navbar-nav li:hover::after {
   position: relative;
 }
 
-.owl-theme .owl-nav.disabled+.owl-dots {
+.owl-one.owl-theme .owl-nav.disabled+.owl-dots {
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -799,10 +799,6 @@ header .navbar-nav li:hover::after {
 
 .owl-theme .owl-dots button:focus {
   outline: none;
-}
-
-.owl-theme .owl-nav.disabled+.owl-dots {
-  margin-top: 30px;
 }
 
 .test__img {
