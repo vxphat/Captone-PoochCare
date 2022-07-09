@@ -47,9 +47,8 @@ header {
   transition: all 0.5s;
   position: fixed;
   z-index: 1000;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 
 .dark header {
@@ -175,6 +174,13 @@ header .navbar-nav li:hover::after {
 .dark #switchButton .fa-moon {
   display: none;
 }
+
+
+/* @media (max-width:523px) {
+  header {
+    width: 100%;
+  }
+} */
 
 /* CAROUSEL */
 .carousel .carousel__conten .carousel__item {
@@ -335,7 +341,7 @@ header .navbar-nav li:hover::after {
   margin-top: 2rem;
 }
 
-/* style cho SERVICES */
+/* style for ABOUT and SERVICES */
 .text .click a {
   text-decoration: none;
   color: var(--title-h2-color);
@@ -451,9 +457,79 @@ header .navbar-nav li:hover::after {
   margin-top: 2rem;
 }
 
+/* CHOOSE US */
+
+.chooseus {
+  padding: 5rem 0;
+}
+
+.chooseus .chooseus__content {
+  display: flex;
+
+}
+
+.chooseus__content .img {}
+
+.chooseus__content .img img {
+
+  border-radius: 10px;
+}
 
 
 
+.chooseus__content .text {
+  padding-top: 5rem;
+}
+
+.chooseus__content .text h5 {
+  color: var(--title-p-color);
+  font-weight: 400;
+}
+
+.chooseus__content .text p {
+  font-size: 1rem;
+  color: #AFAFAF;
+}
+
+.chooseus__content .text h1 {
+  color: var(--title-h2-color);
+  font-weight: 600;
+}
+
+.dark .text h1 {
+  color: var(--bg-color);
+}
+
+.chooseus__content .check span {
+  display: block;
+}
+
+.chooseus__content .check span i {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--bg-light);
+  color: #189A46;
+  margin-right: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.dark .chooseus__content .check span i {
+  background-color: var(--bg-gray);
+}
+
+.chooseus__content .check span p {
+  display: inline-block;
+  color: var(--title-h2-color);
+  font-weight: 600;
+}
+
+.dark .chooseus__content .check span p {
+  color: var(--bg-color);
+}
 
 
 /* NUMBER */
