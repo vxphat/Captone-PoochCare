@@ -52,6 +52,7 @@ header {
 
 .fixed-top {
   top: 40px;
+  width: 100vw;
 }
 
 .dark header {
@@ -306,6 +307,7 @@ header .navbar-nav li:hover::after {
   opacity: .6;
 }
 
+
 @media (max-width:992px) {
 
   .carousel .carousel__conten .carousel__item2 .text {
@@ -325,6 +327,12 @@ header .navbar-nav li:hover::after {
 
   .carousel__item .text p {
     font-size: 15px;
+  }
+}
+
+@media (max-width:339px) {
+  .carousel .carousel__item .text h1 {
+    font-size: 30px;
   }
 }
 
@@ -379,6 +387,12 @@ header .navbar-nav li:hover::after {
 .dark .text .click a {
   color: var(--bg-color);
 
+}
+
+@media (max-width:339px) {
+  .aboutus {
+    margin-top: 3rem;
+  }
 }
 
 /* SERVICES */
@@ -484,8 +498,6 @@ header .navbar-nav li:hover::after {
 
 }
 
-.chooseus__content .img {}
-
 .chooseus__content .img img {
 
   border-radius: 10px;
@@ -573,11 +585,31 @@ header .navbar-nav li:hover::after {
   margin-top: 100px;
 }
 
+.dark .plan {
+  background-color: var(--bg-gray);
+}
+
+.dark .title h2 {
+  color: var(--bg-color);
+}
+
 .card {
   text-align: center;
   border: none;
   background-color: #ffffff;
   box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+}
+
+.dark .card {
+  background-color: var(--title-h2-color);
+}
+
+.dark .plan__content .card-header {
+  background-color: var(--title-h2-color);
+}
+
+.dark .plan__content .card-title {
+  color: var(--bg-color);
 }
 
 .plan__content .card-header {
@@ -754,6 +786,18 @@ header .navbar-nav li:hover::after {
 .testimonial {
   background-color: #F9F7FE;
   text-align: center;
+}
+
+.dark .testimonial {
+  background-color: var(--bg-gray);
+}
+
+.dark .testimonial .testimonial__content {
+  background-color: var(--title-h2-color);
+}
+
+.dark .testimonial .testimonial__content .test__info h4 {
+  color: var(--bg-color);
 }
 
 .testimonial__content {
