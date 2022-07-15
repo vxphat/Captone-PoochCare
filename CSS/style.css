@@ -124,24 +124,20 @@ header .navbar-nav li:hover::after {
   color: white;
 }
 
+button.navbar-toggler.collapsed .icon-close,
+button.navbar-toggler .icon-expand{
+  display: none;
+}
 
+button.navbar-toggler.collapsed .icon-expand,
+button.navbar-toggler .icon-close{
+  display: block;
+}
 /* .navbar-dark .navbar-toggler {
   margin-left: auto;
   border: none;
 } */
-@media (max-width:992px) {
-  .light-dark {
-    position: absolute;
-    right: 50px;
-    top: 23px;
-  }
 
-  .carousel .container .text h1 {
-    font-size: 50px;
-    line-height: 55px;
-
-  }
-}
 
 
 .light-dark i {
@@ -308,33 +304,7 @@ header .navbar-nav li:hover::after {
 }
 
 
-@media (max-width:992px) {
 
-  .carousel .carousel__conten .carousel__item2 .text {
-    margin-left: 0;
-  }
-
-  .carousel .carousel__conten .carousel__item4 .text {
-    margin-left: 0;
-  }
-}
-
-@media (max-width:1200px) {
-  .carousel__item .text h1 {
-    font-size: 52px;
-    line-height: 62px;
-  }
-
-  .carousel__item .text p {
-    font-size: 15px;
-  }
-}
-
-@media (max-width:339px) {
-  .carousel .carousel__item .text h1 {
-    font-size: 30px;
-  }
-}
 
 /* ABOUT US */
 .aboutus {
@@ -389,18 +359,15 @@ header .navbar-nav li:hover::after {
 
 }
 
-@media (max-width:339px) {
-  .aboutus {
-    margin-top: 3rem;
-  }
-}
+
 
 /* SERVICES */
 
 .services {
   background-color: var(--bg-light);
-  padding: 5rem 0;
-  padding-left: 3rem;
+  /* padding-left: 3rem; 
+  Đặt css này để làm gì??
+  */ 
 }
 
 .dark .services {
@@ -412,7 +379,7 @@ header .navbar-nav li:hover::after {
   border-radius: 8px;
   padding: 2.5rem 2rem;
   transition: all 0.5s;
-
+  margin-bottom: 30px;
 }
 
 .services .text:hover {
@@ -426,31 +393,6 @@ header .navbar-nav li:hover::after {
 
 .dark .services .text:hover {
   background-color: transparent;
-}
-
-
-
-@media (min-width: 992px) {
-  .services .text {
-    max-width: 30%;
-  }
-}
-
-@media (max-width:991px) {
-  .services .row {
-    max-width: 750px;
-    margin-left: -5px;
-  }
-
-  .services .text {
-    max-width: 45%;
-  }
-}
-
-@media (max-width:576px) {
-  .services .text {
-    max-width: 95%;
-  }
 }
 
 .services .row .text span {
@@ -579,11 +521,19 @@ header .navbar-nav li:hover::after {
 /* PLAN */
 .plan {
   background-color: #F9F7FE;
-  padding-top: 4.5rem !important;
 }
 
 .plan__content {
   margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 5% auto;
+  width: 90%;
+  margin-top: 40px;
+}
+.plan__content .pricing__item-1 .pricing__caption,
+.plan__content .pricing__item-3 .pricing__caption{
+  padding: 3.5em 2.5em;
 }
 
 .dark .plan {
@@ -594,65 +544,73 @@ header .navbar-nav li:hover::after {
   color: var(--bg-color);
 }
 
-.card {
+.pricing__item {
+  align-self: center;
   text-align: center;
   border: none;
   background-color: #ffffff;
-  box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+  border-radius: 6px;
 }
 
-.dark .card {
+.dark .pricing__item {
   background-color: var(--title-h2-color);
 }
 
-.dark .plan__content .card-header {
-  background-color: var(--title-h2-color);
+.dark .plan__content .pricing_bottom-bot ul li{
+  color: #afafaf;
+}
+.dark .plan__content .pricing__top h6{
+  color: #ddd;
 }
 
-.dark .plan__content .card-title {
-  color: var(--bg-color);
-}
-
-.plan__content .card-header {
-  border-bottom: none;
-  background-color: #ffffff;
-}
-
-.plan__content .card-title {
+.plan__content .pricing__top h6{
   color: var(--title-h2-color);
   font-size: 25px;
   font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 30px;
 }
 
-.plan__content .card-header .card-subtitle {
+.plan__content .pricing__top h4 {
   font-size: 40px;
   line-height: 45px;
   margin: 15px 0 20px;
   font-weight: 600;
-  color: #189A46 !important;
+  color: var(--background-color);
 }
 
-.plan__content .card-subtitle label {
+.plan__content .pricing__top h4 label {
   font-size: 25px;
   vertical-align: text-top;
-  color: #189A46;
 }
 
-.plan__content .card-subtitle .card-month {
+.plan__content .pricing__top h4 span {
   font-size: 16px;
   line-height: 25px;
   color: #999;
   font-weight: 400;
 }
 
-.plan__content .card-body li {
+.plan__content .pricing__bottom{
+  padding-top: 1em;
+}
+
+.plan__content ul{
+  min-height: 120px;
+}
+
+.plan__content .pricing__bottom ul li {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
   align-self: center;
   padding-top: 6px;
+  margin-bottom: 5px;
+  color: #304659;
 }
-
+.buy-button{
+  margin-top: 2em;
+}
 .btn-plan {
   padding: 12px 35px;
   font-size: 18px;
@@ -660,10 +618,9 @@ header .navbar-nav li:hover::after {
   font-weight: 400;
   border-radius: 10px;
   color: #ffffff;
-  background-color: #189A46;
-  border: #189A46;
+  background-color: var(--background-color);
+  border: 1px solid transparent;
   transition: all 0.5s;
-  margin-top: 20px;
 }
 
 .btn-plan:hover {
@@ -671,50 +628,36 @@ header .navbar-nav li:hover::after {
   border-color: #116E32;
 }
 
-.plan__content .plan__item-2 .card-header {
-  padding: 3em 2.5em 1.5em;
-  background-color: #189A46;
+.plan__content .pricing__item-2{
+  z-index: 1;
+  margin: 0;
+  box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+}
+.plan__content .pricing__item.pricing__item-2.active .pricing__top{
+  padding: 3em 2.5em 0.5em;
+  background: var(--background-color);
   border-radius: 5px 5px 0 0;
 }
-
-.plan__content .card-header {
-  padding: 3em 2.5em 0.5em;
-}
-
-.plan__content .plan__item-2 .card-header h4 {
-  background-color: #ffffff;
-  padding: 8px 20px;
+.plan__content .pricing__item-2 .pricing__top h5{
   font-size: 15px;
-  border-radius: 10px;
-  color: #189A46;
-  font-weight: 700;
+  line-height: 20px;
+  color: var(--background-color);
   margin-bottom: 30px;
+  font-weight: 700;
   display: inline-block;
+  padding: 8px 20px;
+  background: #ffffff;
+  border-radius: 10px;
 }
 
-.plan__content .plan__item-2 .card-header .card-title {
+.plan__content .pricing__item-2 .pricing__top h6,
+.plan__content .pricing__item-2 .pricing__top h4,
+.plan__content .pricing__item-2 .pricing__top span{
   color: #ffffff;
 }
 
-.plan__content .plan__item-2 .card-header span,
-.plan__content .plan__item-2 .card-header label {
-  color: #ffffff;
-}
-
-.plan__content .card-body {
+.plan__content .pricing__item-2 .pricing__bottom{
   padding: 2em 2.5em 3.5em;
-}
-
-.plan .plan__content .item {
-  padding: 0;
-  width: 25%;
-}
-
-.plan__content .plan__item-2 {
-  transform: translate(0, -40px);
-  box-shadow: 0 2 30px rgb(0 0 0 / 20%);
-  z-index: 100;
-  margin: 0 auto;
 }
 
 @media (max-width:992px) {
@@ -740,11 +683,6 @@ header .navbar-nav li:hover::after {
 
 
 /* NUTRI */
-@media (min-width:992px) {
-  .nutrition .container {
-    padding: 0 6rem;
-  }
-}
 
 
 .title--red p:first-child {
@@ -1012,6 +950,79 @@ footer {
 a:hover {
   color: #696969;
 }
+
+@media (max-width:992px) {
+
+  .carousel .carousel__conten .carousel__item2 .text {
+    margin-left: 0;
+  }
+
+  .carousel .carousel__conten .carousel__item4 .text {
+    margin-left: 0;
+  }
+}
+
+@media (max-width:1200px) {
+  .carousel__item .text h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .carousel__item .text p {
+    font-size: 15px;
+  }
+}
+@media (max-width:991.85px) {
+  /* .services .row {
+    max-width: 750px;
+    margin-left: -5px;
+  } */
+/* Đặt css này để làm gì? */
+  /* .services .text {
+    max-width: 45%;
+  } */
+  .light-dark {
+    position: absolute;
+    right: 50px;
+    top: 23px;
+  }
+
+  .carousel .container .text h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .navbar-nav{
+    text-align: center;
+  }
+  header .navbar-nav li:hover::after{
+    width: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  /* .services .text {
+    max-width: 30%;
+  } */
+  .nutrition .container {
+    padding: 0 6rem;
+  }
+}
+
+@media (max-width:576px) {
+  /* .services .text {
+    max-width: 95%;
+  } */
+}
+
+@media (max-width:339px) {
+  .carousel .carousel__item .text h1 {
+    font-size: 30px;
+  }
+  .aboutus {
+    margin-top: 3rem;
+  }
+}
+
 
 @keyframes ripple {
   0% {
