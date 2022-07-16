@@ -426,7 +426,7 @@
       <div id="popup-video" class="zoom-anim-dialog mfp-hide" wfd-invisible="true">
         <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allow="autoplay; fullscreen"
           allowfullscreen></iframe>
-          <button title="Close" type="button" class="mfp-close"><span class="fa fa-close"></span></button>
+        <button title="Close" type="button" class="mfp-close"><span class="fa fa-close"></span></button>
       </div>
     </div>
   </section>
@@ -596,9 +596,14 @@
             dapibus nunc, ut rhoncus turpis sodales quis. Integer sit <br> amet mattis quam.</p>
         </div>
         <form action="" class="contact__form mt-5">
-          <div class="contact__sub d-flex d-wrap">
-            <input type="email" name="email" id="" placeholder="Enter your email..." class="form-control">
-            <button class="btn btn-plan m-0">Subscribe</button>
+          <div class="row contact__sub">
+            <div class="col-12 col-md-9">
+              <input type="email" name="email" id="" placeholder="Enter your email..." class="form-control">
+            </div>
+            <div class="col-12 col-md-3 pl-md-0">
+              <button class="btn btn-plan m-0">Subscribe</button>
+            </div>
+
           </div>
         </form>
       </div>
@@ -607,10 +612,10 @@
   <!-- FOOTER -->
   <footer class="pt-5 m-0">
     <div class="footer__top pb-5">
-      <div class="container">
+      <div class="container py-lg-3">
         <div class="footer__content">
           <div class="row">
-            <div class="col-12 col-sm-12 col-md-6">
+            <div class="col-lg-6 col-md-5">
               <h3>Contact information</h3>
               <div class="footer-contact">
                 <ul>
@@ -638,33 +643,38 @@
                 </ul>
               </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-2">
-              <h3>Company</h3>
-              <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Blog Posts</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Pricing</a></li>
-              </ul>
+            <div class="col-lg-6 col-md-7">
+              <div class="row">
+                <div class="col-6 col-sm-4">
+                  <h3>Company</h3>
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blog Posts</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Pricing</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Create account</a></li>
+                    <li><a href="">Care Center</a></li>
+                    <li><a href="">Site Feeback</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  <h3>Support</h3>
+                  <ul>
+                    <li><a href="">All Dogs</a></li>
+                    <li><a href="">Care Advices</a></li>
+                    <li><a href="">Care Support</a></li>
+                    <li><a href="">Vaterinary Help</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-2">
-              <h3>Quick Links</h3>
-              <ul>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Create account</a></li>
-                <li><a href="">Care Center</a></li>
-                <li><a href="">Site Feeback</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-4 col-md-2">
-              <h3>Support</h3>
-              <ul>
-                <li><a href="">All Dogs</a></li>
-                <li><a href="">Care Advices</a></li>
-                <li><a href="">Care Support</a></li>
-                <li><a href="">Vaterinary Help</a></li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </div>
@@ -684,13 +694,13 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  </script>
   <!-- COUTING UP NUMBER -->
   <script src="./js/jquery.countup.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
@@ -706,19 +716,19 @@
   <script src="./js/jquery.magnific-popup.min.js"></script>
   <script>
     $(document).ready(function () {
-  $(".popup-with-zoom-anim").magnificPopup({
-    type: "inline",
-    fixedContentPos: false,
-    fixedBgPos: true,
-    overflowY: "auto",
-    closeBtnInside: true,
-    showCloseBtn: true,
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: "my-mfp-zoom-in"
-  });
-});
+      $(".popup-with-zoom-anim").magnificPopup({
+        type: "inline",
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: "auto",
+        closeBtnInside: true,
+        showCloseBtn: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: "my-mfp-zoom-in"
+      });
+    });
   </script>
   <!-- OUW CAROUSEL  -->
   <script src="./js/owl.carousel.min.js"></script>
@@ -749,7 +759,7 @@
             items: 1,
             nav: false
           },
-          480: {
+          736: {
             items: 1,
             nav: false
           },
@@ -759,7 +769,8 @@
           },
           1000: {
             items: 2,
-            nav: false
+            nav: false,
+            loop: false
           }
         }
       })

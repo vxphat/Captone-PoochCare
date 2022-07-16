@@ -776,14 +776,15 @@ button.navbar-toggler .icon-close {
   border-radius: 10px;
 }
 
-.nutrition__img {
+.nutrition__content{
   position: relative;
 }
 
 .nutrition__icon {
   position: absolute;
-  top: 44%;
-  left: 50%;
+  /* top: 44%;
+  left: 50%; */
+  display: inline-block;
   background: #ffffff;
   width: 55px;
   height: 55px;
@@ -792,6 +793,10 @@ button.navbar-toggler .icon-close {
   color: #189A46;
   transition: all 0.5s;
   animation: ripple 1s linear infinite;
+}
+.nutrition__content .play-view {
+  left:50%;
+  top: 50%;
 }
 
 .nutrition__icon:hover {
@@ -869,6 +874,7 @@ button.mfp-close{
 
 .dark .testimonial .testimonial__content {
   background-color: var(--title-h2-color);
+
 }
 
 .dark .testimonial .testimonial__content .test__info h4 {
@@ -878,6 +884,7 @@ button.mfp-close{
 .testimonial__content {
   padding: 40px 30px;
   border-radius: 10px;
+  text-align: left;
 }
 
 .testimonial__content blockquote q {
@@ -970,7 +977,7 @@ button.mfp-close{
 }
 
 .contact__form .contact__sub button {
-  flex-basis: 27%;
+  padding: 15px 50px;
 }
 
 .contact__form .contact__sub button:hover {
@@ -1076,7 +1083,7 @@ a:hover {
   }
 }
 @media (max-width:1080px){
-  .testimonial .title h2{
+ .title h2{
     font-size: 35px !important;
     line-height: 40px;
   }
@@ -1139,9 +1146,27 @@ a:hover {
   .plan__content{
     width: 75%;
   }
+  .owl-dots{
+    display: none;
+  }
 }
+@media (max-width:667px){
+  .contact__form .contact__sub button {
+    width: 100%;
+    margin-top: 16px !important;
+    padding: 15px 50px;
+  }
+  .nutrition__content .play-view {
+    left: 35%;
+    top: 30%;
+  }
+  .nutrition__img img{
+    width: 100%;
+  }
+}
+
 @media (max-width:600px) {
- .testimonial .title h2{
+ .title h2{
   font-size: 32px !important;
   line-height: 38px;
  }
@@ -1153,8 +1178,19 @@ a:hover {
     margin: 30px auto;
   }
 }
+@media (max-width:480px){
+  .navbar .navbar-brand{
+    font-size: 30px !important;
+  }
+}
+@media (max-width:378px){
+  .title h2{
+    font-size: 27px !important;
+    line-height: 32px;
+  }
+}
 
-@media (max-width:339px) {
+@media (max-width:320px) {
   .carousel .carousel__item .text h1 {
     font-size: 30px;
   }
