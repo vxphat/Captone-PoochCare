@@ -837,7 +837,7 @@ button.navbar-toggler .icon-close {
   /* top: 44%;
   left: 50%; */
   display: inline-block;
-  background: #ffffff;
+  background: #000c04;
   width: 55px;
   height: 55px;
   line-height: 55px;
@@ -1167,13 +1167,6 @@ a:hover {
     width: 0;
   }
 
-  .dropdown-menu a {
-    text-align: center;
-  }
-
-  .dropdown-menu:before {
-    top: 32px;
-  }
 
   .carousel .carousel__conten .carousel__item2 .text {
     margin-left: 0;
@@ -1182,6 +1175,15 @@ a:hover {
   .carousel .carousel__conten .carousel__item4 .text {
     margin-left: 0;
   }
+
+  .dropdown-menu a {
+    text-align: center;
+  }
+
+  .dropdown-menu:before {
+    top: 32px;
+  }
+
 }
 
 
@@ -1201,7 +1203,42 @@ a:hover {
   }
 }
 
+@media (max-width:800px) {
+  .plan__content {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 50px auto 0;
+  }
+}
 
+@media (max-width:768px) {
+  .plan__content {
+    width: 75%;
+  }
+
+  .owl-dots {
+    display: none;
+  }
+}
+
+@media (max-width:667px) {
+  .contact__form .contact__sub button {
+    width: 100%;
+    margin-top: 16px !important;
+    padding: 15px 50px;
+  }
+
+  .nutrition__content .play-view {
+    left: 35%;
+    top: 30%;
+  }
+
+  .nutrition__img img {
+    width: 100%;
+  }
+}
 
 @media (max-width:600px) {
   .title h2 {
