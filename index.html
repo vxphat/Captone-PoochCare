@@ -423,9 +423,10 @@
           <a class="nutrition__icon popup-with-zoom-anim play-view" href="#popup-video"><i class="fa fa-play"></i></a>
         </div>
       </div>
-      <div id="popup-video" class="zoom-anim-dialog mfp-hide mfp-content" wfd-invisible="true">
+      <div id="popup-video" class="zoom-anim-dialog mfp-hide" wfd-invisible="true">
         <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allow="autoplay; fullscreen"
           allowfullscreen></iframe>
+          <button title="Close" type="button" class="mfp-close"><span class="fa fa-close"></span></button>
       </div>
     </div>
   </section>
@@ -705,38 +706,19 @@
   <script src="./js/jquery.magnific-popup.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.popup-with-zoom-anim').magnificPopup({
-        type: 'inline',
-
-        fixedContentPos: false,
-        fixedBgPos: true,
-
-        overflowY: 'auto',
-
-        closeBtnInside: true,
-        preloader: false,
-
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-zoom-in'
-      });
-
-      $('.popup-with-move-anim').magnificPopup({
-        type: 'inline',
-
-        fixedContentPos: false,
-        fixedBgPos: true,
-
-        overflowY: 'auto',
-
-        closeBtnInside: true,
-        preloader: false,
-
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-slide-bottom'
-      });
-    });
+  $(".popup-with-zoom-anim").magnificPopup({
+    type: "inline",
+    fixedContentPos: false,
+    fixedBgPos: true,
+    overflowY: "auto",
+    closeBtnInside: true,
+    showCloseBtn: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: "my-mfp-zoom-in"
+  });
+});
   </script>
   <!-- OUW CAROUSEL  -->
   <script src="./js/owl.carousel.min.js"></script>
