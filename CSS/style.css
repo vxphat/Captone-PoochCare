@@ -44,9 +44,6 @@ li {
 header {
   background-color: var(--bg-color);
   transition: all 0.5s;
-  /*   
-  z-index: 1000;
-  width: 100%; */
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 
@@ -81,6 +78,7 @@ header .navbar-nav .nav-item a {
   color: var(--title-h2-color) !important;
   font-size: 18px;
   transition: all 0.5s;
+  position: relative;
 }
 
 header .navbar-nav li:hover a {
@@ -99,22 +97,44 @@ header .navbar-nav li.active a {
   color: #189A46 !important;
 }
 
-header .navbar-nav li {
-  position: relative;
-}
-
-header .navbar-nav li::after {
-  position: absolute;
+header .navbar-nav .nav-item .nav-link::after {
   content: "";
+  position: absolute;
   width: 0;
   height: 2px;
   background-color: #189A46;
   transition: all 0.5s;
   bottom: 0;
+  left: 0;
 }
 
-header .navbar-nav li:hover::after {
+header .navbar-nav .nav-item .nav-link:hover::after {
   width: 100%;
+}
+
+header .dropdown .dropdown-toggle::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #189A46;
+  transition: all 0.5s;
+  bottom: 7px;
+  left: -6px;
+  margin-left: none;
+  vertical-align: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+header .dropdown .dropdown-toggle:hover::after {
+  width: 100%;
+}
+
+.dropdown .dropdown-toggle:hover {
+  color: #189A46;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -125,20 +145,15 @@ header .navbar-nav li:hover::after {
   color: white;
 }
 
-button.navbar-toggler.collapsed .icon-close,
-button.navbar-toggler .icon-expand {
-  display: none;
-}
-
 button.navbar-toggler.collapsed .icon-expand,
 button.navbar-toggler .icon-close {
   display: block;
 }
 
-/* .navbar-dark .navbar-toggler {
-  margin-left: auto;
-  border: none;
-} */
+button.navbar-toggler.collapsed .icon-close,
+button.navbar-toggler .icon-expand {
+  display: none;
+}
 
 .dropdown,
 .dropleft,
@@ -160,7 +175,13 @@ button.navbar-toggler .icon-close {
   border: none;
   background-color: var(--bg-color);
   transition: 0.5s;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.dark .dropdown-toggle {
+  background-color: var(--title-h2-color);
+  color: var(--bg-color);
+  transition: all 0.5S;
 }
 
 .dropdown-toggle i {
@@ -170,12 +191,6 @@ button.navbar-toggler .icon-close {
 
 .dropdown-toggle::after {
   content: none;
-}
-
-.dark .dropdown-toggle {
-  background-color: var(--title-h2-color);
-  color: var(--bg-color);
-  transition: all 0.5S;
 }
 
 .dropdown-menu {
@@ -209,48 +224,6 @@ button.navbar-toggler .icon-close {
   border: 1px solid rgba(0, 0, 0, .15);
 }
 
-.dropdown .dropdown-toggle:hover {
-  color: #189A46;
-}
-
-.nav-item .dropdown .dropdown-menu .dropdown-item,
-.dark .nav-item .dropdown .dropdown-menu .dropdown-item {
-  position: relative;
-}
-
-.nav-item .dropdown .dropdown-menu .dropdown-item:hover,
-.dark .nav-item .dropdown .dropdown-menu .dropdown-item:hover {
-  color: #189A46 !important;
-  background-color: var(--bg-light)
-}
-
-.nav-item .dropdown .dropdown-menu a::after,
-.dark .nav-item .dropdown .dropdown-menu a::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: #189A46;
-  transition: all 0.5s;
-  bottom: 0;
-  left: 1.5rem;
-}
-
-.nav-item .dropdown .dropdown-menu .dropdown-item1:hover::after,
-.dark .nav-item .dropdown .dropdown-menu .dropdown-item1:hover::after {
-  width: 45%;
-}
-
-.nav-item .dropdown .dropdown-menu .dropdown-item2:hover::after,
-.dark .nav-item .dropdown .dropdown-menu .dropdown-item2:hover::after {
-  width: 50%;
-}
-
-.nav-item .dropdown .dropdown-menu .dropdown-item3:hover::after,
-.dark .nav-item .dropdown .dropdown-menu .dropdown-item3:hover::after {
-  width: 60%;
-}
-
 .light-dark i {
   font-size: 22px;
 }
@@ -265,10 +238,46 @@ button.navbar-toggler .icon-close {
   outline: none;
 }
 
-.dropdown-toggle::after {
-  vertical-align: 0.2rem;
-  margin-left: 0;
+.nav-item .dropdown-item,
+.dark .nav-item .dropdown-item {
+  position: relative;
 }
+
+.nav-item .dropdown .dropdown-menu .dropdown-item:hover,
+.dark .nav-item .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #189A46 !important;
+  background-color: transparent;
+}
+
+.nav-item .dropdown-menu a::after,
+.dark .nav-item .dropdown-menu a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #189A46;
+  transition: all 0.5s;
+  bottom: 0;
+  left: 1.5rem;
+}
+
+.nav-item .dropdown-item1:hover::after,
+.dark .nav-item .dropdown-item1:hover::after {
+  width: 45%;
+}
+
+.nav-item .dropdown-item2:hover::after,
+.dark .nav-item .dropdown-item2:hover::after {
+  width: 50%;
+}
+
+.nav-item .dropdown-item3:hover::after,
+.dark .nav-item .dropdown-item3:hover::after {
+  width: 60%;
+}
+
+
+
 
 /* light theme */
 
@@ -276,7 +285,6 @@ button.navbar-toggler .icon-close {
   background-color: var(--bg-color);
   transition: all 0.5s;
 }
-
 
 #switchButton .fa-sun {
   display: none;
@@ -291,7 +299,6 @@ button.navbar-toggler .icon-close {
   background-color: var(--title-h2-color);
 }
 
-
 .dark #switchButton .fa-sun {
   display: block;
   color: white;
@@ -301,12 +308,6 @@ button.navbar-toggler .icon-close {
   display: none;
 }
 
-
-/* @media (max-width:523px) {
-  header {
-    width: 100%;
-  }
-} */
 
 /* CAROUSEL */
 .carousel .carousel__conten .carousel__item {
@@ -485,9 +486,6 @@ button.navbar-toggler .icon-close {
 
 .services {
   background-color: var(--bg-light);
-  /* padding-left: 3rem; 
-  Đặt css này để làm gì??
-  */
 }
 
 .dark .services {
@@ -1181,7 +1179,7 @@ a:hover {
   }
 
   .dropdown-menu:before {
-    top: 32px;
+    top: 37px;
   }
 
 }
@@ -1200,6 +1198,7 @@ a:hover {
     position: absolute;
     width: 200px;
     left: -50px;
+    top: 2.8rem;
   }
 }
 
