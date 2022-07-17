@@ -101,7 +101,7 @@ header .navbar-nav .nav-item .nav-link::after {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #189A46;
   transition: all 0.5s;
   bottom: 0;
@@ -116,17 +116,12 @@ header .dropdown .dropdown-toggle::after {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #189A46;
   transition: all 0.5s;
   bottom: 7px;
   left: -6px;
-  margin-left: none;
-  vertical-align: none;
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
+  border: none;
 }
 
 header .dropdown .dropdown-toggle:hover::after {
@@ -227,11 +222,21 @@ button.navbar-toggler .icon-expand {
 .light-dark i {
   font-size: 22px;
 }
+.light-dark button:focus{
+  outline: none;
+  box-shadow: none;
+}
+
 
 .navbar-dark .navbar-toggler {
   position: absolute;
   right: 0;
   top: 20px;
+}
+
+.navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
 }
 
 .dropdown .dropdown-toggle:focus {
@@ -254,27 +259,36 @@ button.navbar-toggler .icon-expand {
   position: absolute;
   content: "";
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #189A46;
   transition: all 0.5s;
   bottom: 0;
   left: 1.5rem;
 }
 
-.nav-item .dropdown-item1:hover::after,
-.dark .nav-item .dropdown-item1:hover::after {
+header .navbar-collapse.show .navbar-nav .nav-item .nav-link:hover::after,
+header .navbar-collapse.show .dropdown .dropdown-toggle:hover::after,
+header .navbar-collapse.show .dropdown-menu.show .dropdown-item:hover::after{
+  width: 0;
+}
+header .nav-item.nav__dropdown .dropdown-menu.show a:hover::after{
   width: 45%;
 }
 
-.nav-item .dropdown-item2:hover::after,
-.dark .nav-item .dropdown-item2:hover::after {
-  width: 50%;
+/* header .nav-item.nav__dropdown .dropdown-menu.show .dropdown-item1:hover::after,
+.dark header .nav-item.nav__dropdown .dropdown-menu.show .dropdown-item1:hover::after {
+  width: 45%;
 }
 
-.nav-item .dropdown-item3:hover::after,
-.dark .nav-item .dropdown-item3:hover::after {
+header .nav-item.nav__dropdown .dropdown-menu.show .dropdown-item2:hover::after,
+.dark header .nav-item.nav__dropdown .dropdown-menu.show .dropdown-item2:hover::after {
   width: 60%;
 }
+
+header .nav-item.nav__dropdown .dropdown-menu.show .dropdown-item3:hover::after,
+.dark header .nav-item.nav__dropdown .dropdown-menu.show .dropdown-item3:hover::after {
+  width: 45%;
+} */
 
 
 
@@ -835,7 +849,7 @@ button.navbar-toggler .icon-expand {
   /* top: 44%;
   left: 50%; */
   display: inline-block;
-  background: #000c04;
+  background: #ffffff;
   width: 55px;
   height: 55px;
   line-height: 55px;
@@ -1149,7 +1163,7 @@ a:hover {
   .light-dark {
     position: absolute;
     right: 50px;
-    top: 23px;
+    top: 18px;
   }
 
   .carousel .container .text h1 {
@@ -1245,7 +1259,15 @@ a:hover {
     line-height: 38px;
   }
 }
-
+@media (max-width:575.85px){
+  .navbar-toggler-icon{
+    margin-right: 20px;
+  }
+  .nutrition__content .play-view {
+    left: 45%;
+    top: 35%;
+  }
+}
 @media (max-width:568px) {
   .plan__content {
     gap: 20px;
